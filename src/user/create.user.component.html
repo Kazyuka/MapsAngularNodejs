@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+</head>
+<body>
+<div>
+  <div>
+    <label>Имя пользователя</label>
+    <input class="form-control" [(ngModel)]="user.name" />
+  </div>
+
+  <div>
+    <label>Координаты</label>
+    <input class="form-control" [(ngModel)]="user.addres" />
+  </div>
+  <div class="form-group">
+    <button class="btn btn-default" (click)="addPhone(user.name, user.addres)">Добавить</button>
+  </div>
+</div>
+</body>
+</html>
